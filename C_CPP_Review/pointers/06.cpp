@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <iostream>
 
 int main() {
     int a[] = {1, 2, 3};
@@ -11,10 +11,10 @@ int main() {
 
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 3; j++) {
-            printf("%d ", *m[i]);
+            std::cout << *m[i] << ' ';
             m[i]++;
         }
-        printf("\n");
+        std::cout << std::endl;
     }
 
     return 0;
